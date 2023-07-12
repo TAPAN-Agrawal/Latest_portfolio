@@ -1,0 +1,24 @@
+@mixin display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_parent{
+    @include display;
+    justify-content: space-evenly;
+     margin-top: 90px;
+    // border: 2px solid rgb(247, 240, 240);
+
+    .parent{
+        @include display;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 40vw;
+        height: 70vh;
+        // border: 2px solid red;
+    }
+    .image_container{
+        // border: 2px solid rgb(18, 152, 192);
+    }
+}

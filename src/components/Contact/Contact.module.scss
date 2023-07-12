@@ -1,0 +1,50 @@
+$white : white;
+
+
+@mixin direction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.parent{
+     @include direction;
+
+
+.main_container{
+    height: 800px;
+    width: 500px;
+    // border: 2px solid red;
+    box-shadow: rgba(70, 70, 85, 0.16) 0px 10px 14px;
+    color: $white;
+    // text-align: center;
+
+    .element{
+        // border: 2px solid red;
+        height: 100px;
+        margin-top: 10px;
+
+        .child_element{
+        border: 2px solid rgb(146, 149, 194);
+        width: 70%;
+        height: 25px;
+        border-radius: 20px;
+        background: transparent;
+        margin-left: 30px;
+        margin-top: 10px;
+        color:white
+
+        }
+        .child_element::placeholder{
+            color:$white;
+            padding-left: 5px;
+        }
+     .EEr{
+        padding-left: 10px;
+     }
+      
+    }
+}
+}

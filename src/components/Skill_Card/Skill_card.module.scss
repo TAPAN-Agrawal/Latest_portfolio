@@ -1,0 +1,48 @@
+$border-color: red;
+
+@mixin display {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin direction {
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin combine {
+    @include display;
+    @include direction;
+    flex-direction: row;
+}
+
+.main_container {
+    @include display;
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: rgba(184, 197, 241, 0.2) 0px 2px 8px 0px;
+    scale: 1;
+    transition: all 0.2s ease-in-out;
+
+   &:hover{
+        transform: scale(1.05);
+    }
+
+    .logo {
+        @include combine;
+        color: green;
+        height: 70%;
+
+        .image {
+            height: 130px;
+        }
+    }
+
+    .name {
+        @include combine;
+        height: 30%;
+
+        
+    }
+}

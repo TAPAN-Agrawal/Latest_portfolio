@@ -1,0 +1,53 @@
+$white_color : white;
+$height:30px;
+
+@mixin displaying {
+    display: flex
+}
+
+
+
+.main_container {
+    height: 7vh;
+    background: transparent;
+
+    .logocontainer {
+        @include displaying;
+        // border:2px solid black
+        margin-top: 10px;
+
+        .image {
+            height: 40px;
+        }
+    }
+    .navitem {
+        @include displaying;
+        // border:2px solid white;
+        padding-right: 2px;
+        margin-right: 5px;
+        margin-top: 12px;
+        scale: 1;
+        .icon {
+            color: $white_color;
+            height: $height;
+        }
+    
+        .nav_text:hover {
+    
+            transform: scale(1.05);
+            color: $white_color;
+            cursor: pointer
+        }
+    
+    
+    }
+
+}
+
+
+
+
+
+
+
+

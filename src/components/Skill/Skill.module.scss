@@ -1,0 +1,16 @@
+@mixin display{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.main_parent{
+
+
+    .main_container{
+    
+        @include display;
+        margin-top: 250px;
+    }
+}
