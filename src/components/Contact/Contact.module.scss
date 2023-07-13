@@ -1,3 +1,4 @@
+@import '../../Global/Global.module.scss'; 
 $white : white;
 
 
@@ -12,7 +13,7 @@ $white : white;
 .parent {
     @include direction;
     height: 100vh;
-    background: linear-gradient( rgba(2,0,36,1) 0%, rgba(10,10,117,1)  );
+    background: $background-g;
 
 
     .main_container {
@@ -20,7 +21,7 @@ $white : white;
         width: 500px;
         // border: 2px solid red;
         box-shadow: rgba(70, 70, 85, 0.16) 0px 10px 14px;
-        color: $white;
+        color:$white-color-g;
         // text-align: center;
 
         Form {
@@ -33,19 +34,19 @@ $white : white;
             margin-top: 10px;
 
             .child_element {
-                border: 2px solid rgb(146, 149, 194);
+                border: $purple-border-g;
                 width: 70%;
                 height: 25px;
                 border-radius: 20px;
                 background: transparent;
                 margin-left: 30px;
                 margin-top: 10px;
-                color: white;
+                color: $white-color-g;
                 padding-left: 15px;
             }
 
             .child_element::placeholder {
-                color: $white;
+                color: $white-color-g;
                 padding-left: 5px;
             }
 

@@ -1,21 +1,23 @@
-@mixin display{
+@import '../../Global/Global.module.scss'; 
+
+@mixin display {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.background{
-    background: linear-gradient( rgba(2,0,36,1) 0%, rgba(10,10,117,1)  );
+.background {
 
-    .main_parent{
+    background: $background-g;
+     .main_parent {
         @include display;
         height: 100vh;
-    
+
         justify-content: space-evenly;
-         margin-top: -30px;
+        margin-top: -30px;
         // border: 2px solid rgb(247, 240, 240);
-    
-        .parent{
+
+        .parent {
             @include display;
             flex-direction: column;
             justify-content: space-between;
@@ -23,7 +25,8 @@
             height: 70vh;
             // border: 2px solid red;
         }
-        .image_container{
+
+        .image_container {
             // border: 2px solid rgb(18, 152, 192);
         }
     }

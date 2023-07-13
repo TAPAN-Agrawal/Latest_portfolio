@@ -1,3 +1,5 @@
+@import '../../Global/Global.module.scss'; 
+
 @mixin display {
     display: flex;
 }
@@ -11,7 +13,7 @@
         // border: 2px solid red;
         width: 50%;
         height: 90%;
-        color: white;
+        color: $white-color-g;
         justify-content: flex-end;
         align-items: center;
         // padding-top: -100px;
@@ -73,8 +75,8 @@
                 justify-content: flex-start;
             }
             .time{
-                color: rgb(140, 186, 238);
-                font-size: 50px;
+                color: $light-blue-color-g;
+                font-size: $font-size-m-g;
             }
             
         }

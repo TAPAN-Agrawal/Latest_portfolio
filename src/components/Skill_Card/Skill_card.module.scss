@@ -1,3 +1,5 @@
+@import '../../Global/Global.module.scss'; 
+
 $border-color: red;
 
 @mixin display {
@@ -31,7 +33,7 @@ $border-color: red;
 
     .logo {
         @include combine;
-        color: green;
+        color: $green-color-g;
         height: 70%;
 
         .image {

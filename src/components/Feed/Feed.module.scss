@@ -1,6 +1,8 @@
+@import '../../Global/Global.module.scss'; 
+
 .main{
     height: 100vh;
-    background: linear-gradient( rgba(2,0,36,1) 0%, rgba(10,10,117,1)  );
+    background: $background-g;
 
 .parent{
     width: 70vw;

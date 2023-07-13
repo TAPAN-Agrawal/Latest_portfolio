@@ -1,3 +1,4 @@
+@import '../../Global/Global.module.scss'; 
 
 @mixin display {
     display: flex;
@@ -46,7 +47,7 @@
         height: 20%;
         // border: 2px solid rgb(21, 66, 190);
        box-shadow: rgba(154, 150, 194, 0.2) 0px 4px 14px;
-       color: rgb(152, 172, 182);
+       color: $light-blue-color-g;
 
        }
 

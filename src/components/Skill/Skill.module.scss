@@ -1,3 +1,5 @@
+@import '../../Global/Global.module.scss'; 
+
 @mixin display{
     display: flex;
     justify-content: space-around;
@@ -6,7 +8,7 @@
 
 
 .main_parent{
-    background: linear-gradient( rgba(2,0,36,1) 0%, rgba(10,10,117,1)  );
+    background: $background-g;
  height: 100vh;
 
     .main_container{
