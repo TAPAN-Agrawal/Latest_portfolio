@@ -22,7 +22,7 @@ function Contact() {
         email: yup.string().required("Email required"),
         password: yup.string().required("Password required"),
         gender: yup.string().required("Gender required"),
-        // country: yup.string().required("Country required")
+        country: yup.string().required("Country required")
 
 
     })
@@ -98,18 +98,18 @@ function Contact() {
                     </div>
                     <div className={classes.element}>
                         <Label>Country</Label><br />
-                        <Field name="selectedOption" as="select" className={classes.child_element}>
+                        <Field name="country" as="select" className={classes.child_element}>
 
                             <option value="" >Please Select a country</option>
-                            <option value="option 1">Australia</option>
-                            <option value="option 2"> china</option>
-                            <option value="option 3">Japan</option>
-                            <option value="option 4">Korea</option>
+                            <option value="Australia">Australia</option>
+                            <option value="china"> china</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Korea">Korea</option>
 
                         </Field>
                         <Span  >
                             <br />
-                            <ErrorMessage name="Country" />
+                            <ErrorMessage name="country" />
                         </Span>
                     </div>
 

@@ -1,0 +1,22 @@
+.main{
+    height: 100vh;
+    background: linear-gradient( rgba(2,0,36,1) 0%, rgba(10,10,117,1)  );
+
+.parent{
+    width: 70vw;
+    height: 100vh;
+
+    // border: 2px solid blue;
+    margin-left: 280px;
+
+    .slider{
+        height: 100%;
+        // border: 2px solid green;
+
+        .cart{
+            background: transparent ;
+            margin-left: 400px;
+        }
+    }
+}
+}

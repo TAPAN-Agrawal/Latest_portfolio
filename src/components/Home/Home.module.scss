@@ -1,0 +1,92 @@
+@mixin display {
+    display: flex;
+}
+
+.parent {
+    @include display;
+    height: 100vh;
+
+    .left_child {
+        @include display;
+        // border: 2px solid red;
+        width: 50%;
+        height: 90%;
+        color: white;
+        justify-content: flex-end;
+        align-items: center;
+        // padding-top: -100px;
+
+        .information {
+
+            width: 360px;
+            height: 200px;
+            // border: 2px solid green;
+            margin-top: -200px;
+            margin-right: 200px;
+
+            .type {
+                overflow: hidden;
+                border-right: .15em solid rgb(209, 186, 144);
+                white-space: nowrap;
+                margin: 0 auto;
+                letter-spacing: .15em;
+                animation:
+                    typing 3.5s steps(40, end),
+                    blink-caret .75s step-end infinite;
+            }
+
+
+            @keyframes typing {
+                from {
+                    width: 0
+                }
+
+                to {
+                    width: 100%
+                }
+            }
+
+
+            @keyframes blink-caret {
+
+                from,
+                to {
+                    border-color: transparent
+                }
+
+                50% {
+                    border-color: orange;
+                }
+            }
+        }
+        .event{
+            // @include display;
+            // justify-content: center;
+            // border: 2px solid orange;
+            // box-shadow: rgba(107, 94, 230, 0.05) 0px 0px 0px 1px;
+            width: 150px;
+            height:100px;
+
+            div{
+                @include display;
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+            .time{
+                color: rgb(140, 186, 238);
+                font-size: 50px;
+            }
+            
+        }
+    }
+
+    .right_child {
+        @include display;
+        align-items: center;
+        justify-content: center;
+        // border: 2px solid blue;
+        width: 50%;
+        height: 90%;
+
+    }
+}

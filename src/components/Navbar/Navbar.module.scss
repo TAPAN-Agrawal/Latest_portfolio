@@ -19,6 +19,12 @@ $height:30px;
         .image {
             height: 40px;
         }
+
+        .Icontext:hover{
+            cursor: pointer;
+            // color: blue;
+
+        }
     }
     .navitem {
         @include displaying;

@@ -10,18 +10,48 @@ import { ImFileText2 } from 'react-icons/im';
 import { MdOutlineContactMail } from 'react-icons/md';
 import { LuLaptop2 } from 'react-icons/lu'
 import {Icontext,P} from './Navbar.styled'
+import { useNavigate } from "react-router-dom";
 
-function Navbar() {
+interface Nav {
+    onHandle:(name:string)=>void
+}
+function Navbar(Props:Nav) {
+
+
+const navigate = useNavigate();
+
+const contactHandler = () =>{
+    navigate('/contact')
+}
+const homeHandler = () =>{
+    navigate('/')
+}
+
+const aboutHandler = () =>{
+    Props.onHandle("about")
+}
+
+const skillsHandler = () =>{
+    Props.onHandle("skills")
+}
+
+const projectHandler = () =>{
+    Props.onHandle("project")
+}
+const feedHandler = ()=>{
+    Props.onHandle("feed")
+}
+
     return (
         <div className={classes.main_container}>
             <Row>
 
                 <Col span={2} offset={4}>
-                    <div className={classes.logocontainer}>
+                    <div className={classes.logocontainer} onClick={homeHandler}>
                         <div >
                             <img src={img1} alt="" className={classes.image} />
                         </div>
-                        <Icontext>
+                        <Icontext  className={classes.Icontext}>
                             Dev._io
                         </Icontext>
                     </div>
@@ -33,7 +63,7 @@ function Navbar() {
 
                             <AiOutlineHome className={classes.icon} size={20} />
                         </div>
-                        <P className={classes.nav_text}>Home</P>
+                        <P className={classes.nav_text} onClick={homeHandler}>Home</P>
                     </div>
                 </Col>
                 <Col span={2}>
@@ -42,7 +72,7 @@ function Navbar() {
 
                             <AiOutlineUser className={classes.icon} size={20} />
                         </div>
-                        <P className={classes.nav_text}>About</P>
+                        <P className={classes.nav_text} onClick={aboutHandler}>About</P>
                     </div>
                 </Col>
                 <Col span={2}>
@@ -51,16 +81,16 @@ function Navbar() {
 
                             <ImFileText2 className={classes.icon} size={20} />
                         </div>
-                        <P className={classes.nav_text}>Skill</P>
+                        <P className={classes.nav_text} onClick={skillsHandler}>Skill</P>
                     </div>
                 </Col>
                 <Col span={2}>
-                    <div className={classes.navitem}>
+                    <div className={classes.navitem} >
                         <div>
 
                             <AiOutlineProject className={classes.icon} size={20} />
                         </div>
-                        <P className={classes.nav_text}>Project</P>
+                        <P className={classes.nav_text} onClick={projectHandler}>Project</P>
                     </div>
                 </Col>
                 <Col span={2}>
@@ -69,7 +99,7 @@ function Navbar() {
 
                             <MdOutlineContactMail className={classes.icon} size={20} />
                         </div>
-                        <P className={classes.nav_text}>Feed</P>
+                        <P className={classes.nav_text} onClick={feedHandler}>Feed</P>
                     </div>
                 </Col>
                 <Col span={2}>
@@ -78,7 +108,7 @@ function Navbar() {
 
                             <LuLaptop2 className={classes.icon} size={20} />
                         </div>
-                        <P className={classes.nav_text}>Contact</P>
+                        <P className={classes.nav_text} onClick={contactHandler}>Contact</P>
                     </div>
                 </Col>
 

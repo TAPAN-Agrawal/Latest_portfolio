@@ -1,0 +1,15 @@
+.parent{
+    height: 100vh;
+    background: linear-gradient( rgba(2,0,36,1) 0%, rgba(10,10,117,1)  );
+    padding-top: 100px;
+    padding-left: 30%;
+    
+    .img{
+        height: 250px;
+    }
+    .errimg{
+        height: 100px;
+        margin-left: 600px;
+        margin-top: -600px;
+    }
+}

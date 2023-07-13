@@ -2,9 +2,11 @@ import React from "react";
 import classes from './Project.module.scss'
 import Project_card from '../ProjectCard/Project_card';
 import { Col, Row } from "antd";
+import { Heading } from "./Project.styled";
 
 function Project() {
-  return <div>
+  return <div className={classes.parent}>
+      <Heading>Project</Heading>
     <Row gutter={[4, 16]}>
       <Col span={10} offset={2}>
 

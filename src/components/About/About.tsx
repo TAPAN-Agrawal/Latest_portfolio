@@ -5,7 +5,7 @@ import img from '../../Assets/Images/book.png'
 import { Heading } from "../About/About.styled";
 
 function About() {
-  return (<>
+  return (<div className={classes.background}>
 <Heading>About</Heading>
     <div className={classes.main_parent}>
       <div className={classes.image_container}>
@@ -17,7 +17,7 @@ function About() {
         <AboutCard year="2019-2023" college="Silver Oak College of Engineering snd Technology" description="-specialized in computer science" />
       </div>
     </div>
-    </>);
+    </div>);
 }
 
 export default About;

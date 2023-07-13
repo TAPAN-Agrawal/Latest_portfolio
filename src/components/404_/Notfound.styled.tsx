@@ -8,3 +8,6 @@ margin-left:20px;
 padding-top:20px;
 padding-bottom:20px;
 `
+export const H1 = styled.h1`
+color:yellow;
+`
