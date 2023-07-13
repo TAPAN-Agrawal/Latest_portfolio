@@ -16,9 +16,9 @@ function AboutCard(Props:AboutCard) {
           <FaUserGraduate className={classes.icon} size={50}/>
         </div>
         <div  className={classes.information_container}>
-            <Year>{Props.year}</Year>
-            <Description>{Props.college}</Description>
-            <College>{Props.description}</College>
+            <Year className={classes.Year}>{Props.year}</Year>
+            <Description className={classes.Description}>{Props.college}</Description>
+            <College className={classes.College}>{Props.description}</College>
         </div>
     </div>
     )

@@ -45,6 +45,11 @@ $border-color: red;
         @include combine;
         height: 30%;
 
-        
+        .p{
+            // color: black;
+            color:$white-color-g;
+            font-size:$font-size-m-g - 10;
+            font-family: $font-family-g;
+        }
     }
 }

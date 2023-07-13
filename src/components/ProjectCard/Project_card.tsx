@@ -13,13 +13,13 @@ function Project_card(Props:ProjectCard) {
     return (<div className={classes.main_container}>
        
         <div className={classes.Heading}>
-           <Title>{Props.title}</Title>
+           <Title className={classes.title}>{Props.title}</Title>
         </div>
         <div className={classes.description}>
-<Description>{Props.description}</Description>
+<Description className={classes.description}>{Props.description}</Description>
         </div>
         <div className={classes.technology}>
-<Technology>{Props.technology}</Technology>
+<Technology className={classes.technology}>{Props.technology}</Technology>
         </div>
     </div>);
 }

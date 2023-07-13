@@ -35,7 +35,7 @@ setInterval(()=>{
     return <div className={classes.parent}>
         <div className={classes.left_child}>
             <div className={classes.information}>
-                <H1 >Hi There</H1><br/>
+                <H1 className={classes.h}>Hi There</H1><br/>
                 <H2 className={classes.temp}>I'am <div>Tapan Agrawal</div></H2><br/>
                 <Type className={classes.type}>Full-Stack Developer</Type>
             </div>

@@ -9,6 +9,12 @@
 .background {
 
     background: $background-g;
+
+    .Heading{
+        color: $white-color-g;
+        font-size: $font-size-m-g;
+        font-family: $font-family-g;
+    }
      .main_parent {
         @include display;
         height: 100vh;

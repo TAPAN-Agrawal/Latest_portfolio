@@ -4,7 +4,7 @@ $white_color : white;
 $height:30px;
 
 @mixin displaying {
-    display: flex
+    display: flex;
 }
 
 
@@ -20,6 +20,11 @@ $height:30px;
 
         .image {
             height: 40px;
+        }
+        .Icontext{
+            font-size: $font-size-c-l-g + 4;
+            font-family: $font-family-g;
+            color:$white-color-g ;
         }
 
         .Icontext:hover{
@@ -38,6 +43,12 @@ $height:30px;
         .icon {
             color: $white-color-g;
             height: $height;
+        }
+        .nav_text{
+            // color: pink;
+            color:$white-color-g ;
+
+            font-size: $font-size-c-l-g;
         }
     
         .nav_text:hover {

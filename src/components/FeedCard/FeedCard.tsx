@@ -14,7 +14,7 @@ function FeedCard(Props:FeedCard) {
           <div className={classes.parent}>
             <div className={classes.child}>
                     <P>{Props.description}</P>
-                    <Name>-{Props.name}</Name>
+                    <Name className={classes.name}>-{Props.name}</Name>
                     <UNIVERSITY>{Props.university}</UNIVERSITY>
             </div>
             <div className={classes.avatar}>

@@ -10,7 +10,7 @@ function Notfound() {
         <img src={img4} className={classes.img}/>
         <img src={img0} className={classes.img}/>
         <img src={img4} className={classes.img}/>
-        <Heading>Page not found!!!</Heading>
+        <Heading className={classes.Heading}>Page not found!!!</Heading>
         <H1>Please check your internet connection</H1>
         <img src={imgerror} className={classes.errimg}/>
   </div>;

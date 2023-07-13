@@ -45,6 +45,21 @@
         width: 70%;
         height: 100%;
         // border: 2px solid rgb(207, 210, 235);
+
+        .Year{
+            font-family: $font-family-g;
+            font-size: $font-size-c-s-g;
+        }
+        .Description{
+            font-family: $font-family-g;
+            font-size: $font-size-c-l-g;
+
+        }
+        .College{
+            font-family: $font-family-g;
+            font-size: $font-size-c-m-g;
+
+        }
        }
 
 }

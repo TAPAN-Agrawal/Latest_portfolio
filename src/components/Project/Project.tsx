@@ -6,7 +6,7 @@ import { Heading } from "./Project.styled";
 
 function Project() {
   return <div className={classes.parent}>
-      <Heading>Project</Heading>
+      <Heading className={classes.heading}>Project</Heading>
     <Row gutter={[4, 16]}>
       <Col span={10} offset={2}>
 

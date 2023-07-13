@@ -26,7 +26,19 @@
             margin-top: -200px;
             margin-right: 200px;
 
+            .h{
+                font-size: $font-size-m-g;
+                color: $light-purple-color-g;
+            }
+            .temp{
+                // color: black;
+                font-size: $font-size-m-g - 25;
+                color: $medium-purple-color-g;
+
+            }
+
             .type {
+                font-size: $font-size-c-l-g + 5;
                 overflow: hidden;
                 border-right: .15em solid rgb(209, 186, 144);
                 white-space: nowrap;

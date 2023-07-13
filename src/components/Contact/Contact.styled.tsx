@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 
 export const Heading = styled.div`
-color:white;
-font-size:60px;
+
 `
 export const Label = styled.label`
 padding-left:15px;

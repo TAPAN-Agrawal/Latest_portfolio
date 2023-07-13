@@ -6,10 +6,10 @@ import { Heading } from "../About/About.styled";
 
 function About() {
   return (<div className={classes.background}>
-<Heading>About</Heading>
+    <Heading className={classes.Heading}>About</Heading>
     <div className={classes.main_parent}>
       <div className={classes.image_container}>
-        <img src={img}/>
+        <img src={img} />
       </div>
       <div className={classes.parent}>
         <AboutCard year="2016-1017" college="Nelson High School" description="-specialized in overall development of a human brain" />
@@ -17,7 +17,7 @@ function About() {
         <AboutCard year="2019-2023" college="Silver Oak College of Engineering snd Technology" description="-specialized in computer science" />
       </div>
     </div>
-    </div>);
+  </div>);
 }
 
 export default About;

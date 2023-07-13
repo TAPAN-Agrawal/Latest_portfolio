@@ -15,7 +15,10 @@ $white : white;
     height: 100vh;
     background: $background-g;
 
-
+    .heading{
+     font-size: $font-size-m-g + 10;
+     color: $white-color-g;
+    }
     .main_container {
         height: 800px;
         width: 500px;

@@ -52,7 +52,7 @@ function Contact() {
             draggable
             pauseOnHover
             theme="light" />
-        <Heading>ContactUs</Heading>
+        <Heading className={classes.heading}>ContactUs</Heading>
         <div className={classes.main_container}>
 
             <Formik initialValues={initialValue} validationSchema={validationSchema} onSubmit={submitHandler}>

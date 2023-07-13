@@ -17,7 +17,7 @@ function Skill_Card(Props:Card) {
     <img src={Props.image} alt="ima" className={classes.image}/>
    </div>
    <div className={classes.name}>
-    <P>{Props.name}</P>
+    <P className={classes.p}>{Props.name}</P>
    </div>
   </div>
   )

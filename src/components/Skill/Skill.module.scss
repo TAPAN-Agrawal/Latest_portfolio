@@ -11,6 +11,11 @@
     background: $background-g;
  height: 100vh;
 
+ .heading{
+    color:$white-color-g;
+    font-size:$font-size-m-g ;
+    font-family: $font-family-g;
+ }
     .main_container{
     
         @include display;

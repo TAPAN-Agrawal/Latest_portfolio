@@ -12,7 +12,7 @@ import { Heading } from "./Skill.styled";
 function Skill() {
    
   return <div  className={classes.main_parent}>
-   <Heading>Skills</Heading>
+   <Heading className={classes.heading}>Skills</Heading>
   <div className={classes.main_container}>
     <Skill_Card image={img1} name="Html"/>
     <Skill_Card image={img2} name="React"/>

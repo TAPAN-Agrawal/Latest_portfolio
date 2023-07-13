@@ -9,7 +9,7 @@ import { Heading } from "./Feed.styled";
 function Feed() {
   return <div className={classes.main}>
 <div className={classes.parent}>
-    <Heading>Feed</Heading>
+    <Heading className={classes.heading}>Feed</Heading>
     <Carousel className={classes.slider} autoplay>
 
       <div className={classes.cart} >
